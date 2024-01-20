@@ -35,10 +35,47 @@
         font-size: 16px;
       }
 
-      @media screen and (max-width: 599.98px) {
+      .img {
+        padding-left: 200px;
+        background-image: url(https://nbuhrmvoogojiuhaykgk.supabase.co/storage/v1/object/public/AOSN/1661244600_16-kartinkin-net-p-otkritki-s-dnem-rozhdeniya-bez-slov-16.jpg);
+        border-radius: 20px;
+        background-size: 100%;
       }
+      .img-h3 {
+        color: rgb(236, 64, 34);
+        font-style: italic;
+        font-size: 14px;
+        width: 200px;
+      }
+      .img-h2 {
+        font-size: 16px;
+        color: goldenrod;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      .img-p1, .img-p2 {
+        padding-left: 50px;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 10px;
+        color:rgb(3, 43, 3);
+      }
+      
+      @media screen and (min-width: 450px) {
+        .img-h2 {
+        font-size: 20px;
+        padding-left: 30px;
 
-      @media screen and (max-width: 399.98px) {
+      }
+      .img-h3 {
+        font-size: 15px;
+        padding-left: 0px;
+
+      }
+      .img-p1, .img-p2 {
+        font-size: 10px;
+        padding-left: 80px;
+      }
         .mobile-padding {
           padding-right: 10px !important;
           padding-left: 10px !important;
@@ -69,6 +106,20 @@
           max-width: 100% !important;
         }
       }
+      @media screen and (min-width: 600px) {
+      .img-h2 {
+        font-size: 20px;
+      }
+      .img-h3 {
+        font-size: 15px;
+      }
+      .img-p1, .img-p2 {
+        font-size: 15px;
+      }
+      .img-p2{
+        padding-left: 130px;
+      }
+      }
 
       /* Custom Dark Mode Colors */
       :root {
@@ -84,8 +135,8 @@
 
         h1,
         h2,
-        h3,
-        p {
+        h3
+         {
           color: #ffffff !important;
         }
       }
@@ -186,7 +237,7 @@
           "
         >
           <!-- Logo -->
-          <tr >
+          <tr>
             <td>
               <table
                 align="center"
@@ -194,10 +245,9 @@
                 cellspacing="0"
                 cellpadding="0"
                 role="presentation"
-                                
               >
                 <tr>
-                  <td style="padding: 19px 0 19px 0; text-align: center;">
+                  <td style="padding: 19px 0 19px 0; text-align: center">
                     <a
                       href="https://www.vmr.gov.ua/asotsiatsiia-orhaniv-samoorhanizatsii-naselennia"
                       target="_blank"
@@ -247,41 +297,33 @@
                 cellspacing="0"
                 cellpadding="0"
                 role="presentation"
-                style="width: 100%; max-width: 600px"
+                style="width: 100%;height: 100%;"
               >
-                
-
                 <tr>
                   <td style="padding: 0 0 25px 0">
-                    <img
-                      src="https://nbuhrmvoogojiuhaykgk.supabase.co/storage/v1/object/public/AOSN/1661244600_16-kartinkin-net-p-otkritki-s-dnem-rozhdeniya-bez-slov-16.jpg"
-                      alt="Google Stories"
-                      border="0"
-                      width="552"
-                      style="width: 100%; max-width: 552px; border-radius: 20px;"
-                    />
-                    <div style="position:relative; bottom: 420px; left: 210px;height: 0px;">
-                      <h3 style="color: rgb(236, 64, 34);text-shadow: #146cf0 1px 0 10px;">Колектив Асоціації<br>
-                          9 лютого 2024р. вітає<br>
-                          з днем народження:
+                    <div class="img">
+                      <h3 class="img-h3">
+                        Колектив Асоціації<br />
+                        9 лютого 2024р. вітає<br />
+                        з днем народження:
                       </h3>
-                      <h2 style="font-size: 30px; color:gold;text-shadow: #146cf0 1px 0 10px; padding-left: 50px; font-style: italic;">Наталю Мороз</h2>
-                      <p style="padding-left: 90px;font-weight: 600;text-shadow: #146cf0 1px 0 10px;">
-                        З Днем народження вітаєм!<br>
-                        І від нас усіх бажаєм<br>
-                        Миру, радості й любові,<br>
-                        Щоб Господь дав щастя й долі.<br>
+                      <h2 class="img-h2">Наталю Мороз</h2>
+                      <p class="img-p1">
+                        З Днем народження вітаєм!<br />
+                        І від нас усіх бажаєм<br />
+                        Миру, радості й любові,<br />
+                        Щоб Господь дав щастя й долі.<br />
                       </p>
-                      <p style="padding-left: 140px;font-weight: 600;text-shadow: #146cf0 1px 0 10px;">
-                        Щоб було у Вашій хаті<br>
-                        Сміху й усмішок багато.<br>
-                        Хай у справах таланить<br>
+                      <p class="img-p2"
+                      >
+                        Щоб було у Вашій хаті<br />
+                        Сміху й усмішок багато.<br />
+                        Хай у справах таланить<br />
                         І завжди у всім щастить!
                       </p>
                     </div>
                   </td>
                 </tr>
-                
               </table>
             </td>
           </tr>
@@ -337,13 +379,14 @@
                         color: #525f7f;
                       "
                     >
-                      Якщо у вас є якісь запитання, зв'яжіться з нами:<br>
+                      Якщо у вас є якісь запитання, зв'яжіться з нами:<br />
                       <a
                         href="mailto:Mazur_VV@vmr.gov.ua"
                         target="_blank"
                         style="text-decoration: none; color: #489dff"
-                        >Mazur_VV@vmr.gov.ua</a>
-                  </p>
+                        >Mazur_VV@vmr.gov.ua</a
+                      >
+                    </p>
                   </td>
                 </tr>
                 <tr>
@@ -447,7 +490,6 @@
                       </td>
                       <td>
                     <![endif]-->
-                   
                   </td>
                 </tr>
               </table>
